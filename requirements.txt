@@ -1,0 +1,9 @@
+numpy
+PySide6
+requests
+matplotlib
+pyqtgraph
+urllib3
+python-dateutil
+pytz
+pymongo
