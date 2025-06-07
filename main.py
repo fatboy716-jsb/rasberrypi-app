@@ -40,9 +40,7 @@ def main():
     app = QApplication(sys.argv)
 
     # Register fonts
-    for font in glob.glob(os.path.join(APP_DIR, 'font', '*.ttf')):
-        QtGui.QFontDatabase.addApplicationFont(font)
-
+   
     cur_exit_code = MainScreen.EXIT_CODE_CRASH
 
     while cur_exit_code == MainScreen.EXIT_CODE_CRASH:
