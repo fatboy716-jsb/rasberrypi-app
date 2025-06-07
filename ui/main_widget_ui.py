@@ -1,53 +1,27 @@
 # -*- coding: utf-8 -*-
 
-################################################################################
-## Form generated from reading UI file 'untitled.ui'
+##########################################################################
+# Form generated from reading UI file 'untitled.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.9.0
+# Created by: Qt User Interface Compiler version 6.9.0
 ##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
+# WARNING! All changes made in this file will be lost when recompiling UI file!
+##########################################################################
 
 from PySide6.QtCore import (
     QCoreApplication,
-    QDate,
-    QDateTime,
-    QLocale,
     QMetaObject,
-    QObject,
-    QPoint,
     QRect,
-    QSize,
     QTime,
-    QUrl,
-    Qt,
 )
 from PySide6.QtGui import (
-    QBrush,
-    QColor,
-    QConicalGradient,
-    QCursor,
     QFont,
-    QFontDatabase,
-    QGradient,
-    QIcon,
-    QImage,
-    QKeySequence,
-    QLinearGradient,
-    QPainter,
-    QPalette,
-    QPixmap,
-    QRadialGradient,
-    QTransform,
 )
 from PySide6.QtWidgets import (
-    QApplication,
     QFrame,
     QLabel,
-    QMainWindow,
     QTimeEdit,
     QPushButton,
-    QSizePolicy,
     QWidget,
 )
 
@@ -423,12 +397,22 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(
             QCoreApplication.translate("MainWindow", "MainWindow", None)
         )
-        self.label_10.setText(QCoreApplication.translate("MainWindow", "🌡️", None))
-        self.temp_2.setText(QCoreApplication.translate("MainWindow", " 85°F", None))
-        self.label_1_3.setText(QCoreApplication.translate("MainWindow", "🕒", None))
+        self.label_10.setText(
+            QCoreApplication.translate(
+                "MainWindow", "🌡️", None))
+        self.temp_2.setText(
+            QCoreApplication.translate(
+                "MainWindow", " 85°F", None))
+        self.label_1_3.setText(
+            QCoreApplication.translate(
+                "MainWindow", "🕒", None))
         self.time_2.setTime(QTime(0, 0, 0))
-        self.check_wifi.setText(QCoreApplication.translate("MainWindow", "📡", None))
-        self.check_blutooth.setText(QCoreApplication.translate("MainWindow", "🅱️", None))
+        self.check_wifi.setText(
+            QCoreApplication.translate(
+                "MainWindow", "📡", None))
+        self.check_blutooth.setText(
+            QCoreApplication.translate(
+                "MainWindow", "🅱️", None))
         self.labelGrillTemp.setText(
             QCoreApplication.translate("MainWindow", "Timer", None)
         )
@@ -438,18 +422,30 @@ class Ui_MainWindow(object):
         self.label_1_1.setText(
             QCoreApplication.translate("MainWindow", " 0°F \n" " set", None)
         )
-        self.label_11.setText(QCoreApplication.translate("MainWindow", "🌡️", None))
-        self.temp1.setText(QCoreApplication.translate("MainWindow", " 85°F", None))
+        self.label_11.setText(
+            QCoreApplication.translate(
+                "MainWindow", "🌡️", None))
+        self.temp1.setText(
+            QCoreApplication.translate(
+                "MainWindow", " 85°F", None))
         self.label_13.setText(
             QCoreApplication.translate("MainWindow", " 0°F set", None)
         )
-        self.temp2.setText(QCoreApplication.translate("MainWindow", " 85°F", None))
-        self.label_27.setText(QCoreApplication.translate("MainWindow", "🌡️", None))
+        self.temp2.setText(
+            QCoreApplication.translate(
+                "MainWindow", " 85°F", None))
+        self.label_27.setText(
+            QCoreApplication.translate(
+                "MainWindow", "🌡️", None))
         self.label_17.setText(
             QCoreApplication.translate("MainWindow", " 0°F set", None)
         )
-        self.temp3.setText(QCoreApplication.translate("MainWindow", " 85°F", None))
-        self.label_29.setText(QCoreApplication.translate("MainWindow", "🌡️", None))
+        self.temp3.setText(
+            QCoreApplication.translate(
+                "MainWindow", " 85°F", None))
+        self.label_29.setText(
+            QCoreApplication.translate(
+                "MainWindow", "🌡️", None))
         self.label_22.setText(
             QCoreApplication.translate("MainWindow", " 0°F set", None)
         )
@@ -462,17 +458,35 @@ class Ui_MainWindow(object):
         self.label_3.setText(
             QCoreApplication.translate("MainWindow", "PROBE2 TEMP", None)
         )
-        self.uimode.setText(QCoreApplication.translate("MainWindow", "⚙", None))
-        self.cfmode.setText(QCoreApplication.translate("MainWindow", "°C/°F", None))
-        self.label1.setText(QCoreApplication.translate("MainWindow", "OFF", None))
-        self.label3.setText(QCoreApplication.translate("MainWindow", "0%", None))
-        self.label2.setText(QCoreApplication.translate("MainWindow", "0%", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", "GAS", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", "🔥", None))
+        self.uimode.setText(
+            QCoreApplication.translate(
+                "MainWindow", "⚙", None))
+        self.cfmode.setText(
+            QCoreApplication.translate(
+                "MainWindow", "°C/°F", None))
+        self.label1.setText(
+            QCoreApplication.translate(
+                "MainWindow", "OFF", None))
+        self.label3.setText(
+            QCoreApplication.translate(
+                "MainWindow", "0%", None))
+        self.label2.setText(
+            QCoreApplication.translate(
+                "MainWindow", "0%", None))
+        self.label_18.setText(
+            QCoreApplication.translate(
+                "MainWindow", "GAS", None))
+        self.label_16.setText(
+            QCoreApplication.translate(
+                "MainWindow", "🔥", None))
         self.label_20.setText(
             QCoreApplication.translate("MainWindow", "ELECTRIC", None)
         )
-        self.label_19.setText(QCoreApplication.translate("MainWindow", "⚡", None))
-        self.btnStop.setText(QCoreApplication.translate("MainWindow", "STOP", None))
+        self.label_19.setText(
+            QCoreApplication.translate(
+                "MainWindow", "⚡", None))
+        self.btnStop.setText(
+            QCoreApplication.translate(
+                "MainWindow", "STOP", None))
 
     # retranslateUi

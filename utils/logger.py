@@ -43,7 +43,8 @@ console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
 # Add file handlers
-f_info_handler = RotatingFileHandler(LOG_FILE, maxBytes=5 * 1024 * 1024, backupCount=4)
+f_info_handler = RotatingFileHandler(
+    LOG_FILE, maxBytes=5 * 1024 * 1024, backupCount=4)
 f_info_handler.setLevel(logging.DEBUG)
 f_info_handler.setFormatter(formatter)
 logger.addHandler(f_info_handler)
