@@ -7,7 +7,6 @@ import glob
 from PySide6 import QtGui
 import traceback
 import sys
-from PySide6.QtWidgets import QApplication
 from screens.main_screen import MainScreen
 from utils.settings import Settings
 import os

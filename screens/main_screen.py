@@ -91,11 +91,11 @@ class MainScreen(QMainWindow):
             for i in [self.ui.label2, self.ui.label3]:
                 i.setStyleSheet(
                     """
-                                                background-color: #000;
-                                                color: #fff; " border-radius: 30px;
-                                                font: 12pt \"MS Shell Dlg 2\";
-                                                qproperty-alignment: 'AlignCenter';
-                                           """
+                            background-color: #000;
+                            color: #fff; " border-radius: 30px;
+                            font: 12pt \"MS Shell Dlg 2\";
+                            qproperty-alignment: 'AlignCenter';
+                        """
                 )
 
             self.ui.label1.setStyleSheet(
@@ -138,10 +138,10 @@ class MainScreen(QMainWindow):
             for i in [self.ui.label2, self.ui.label3]:
                 i.setStyleSheet(
                     """
-                                                background-color: #fff;
-                                                color: #000;
-                                                border-radius: 30px;
-                                                font: 12pt \"MS Shell Dlg 2\";
-                                                qproperty-alignment: 'AlignCenter';
-                                           """
+                                        background-color: #fff;
+                                        color: #000;
+                                        border-radius: 30px;
+                                        font: 12pt \"MS Shell Dlg 2\";
+                                        qproperty-alignment: 'AlignCenter';
+                                    """
                 )
