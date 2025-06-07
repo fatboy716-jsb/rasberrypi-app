@@ -5,6 +5,7 @@ class TouchObserver(QObject):
     """
     Observer to monitor the global touch events.
     """
+
     pressed = Signal(QPoint)
     released = Signal(QPoint)
     moved = Signal(QPoint)
