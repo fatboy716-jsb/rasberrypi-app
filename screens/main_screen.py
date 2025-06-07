@@ -1,9 +1,7 @@
-from PySide6.QtWidgets import QMainWindow, QPushButton
+from PySide6.QtWidgets import QMainWindow
 from PySide6.QtCore import Qt, QTimer, QTime
 from ui.main_widget_ui import Ui_MainWindow
 from utils.settings import Settings
-import traceback
-import sys
 import os
 from utils.common import is_rpi
 from utils.api import api
@@ -52,18 +50,25 @@ class MainScreen(QMainWindow):
 
     def update_temp_unit(self, celsius: bool):
         if not celsius:
-            for label in [self.ui.temp1, self.ui.temp2, self.ui.temp3, self.ui.temp_2]:
+            for label in [
+                    self.ui.temp1,
+                    self.ui.temp2,
+                    self.ui.temp3,
+                    self.ui.temp_2]:
                 text = label.text()
                 celsius = float(text.replace("°C", "").strip())
                 fahrenheit = (celsius * 9 / 5) + 32
                 label.setText(f"{fahrenheit:.1f}°F")
         else:
-            for label in [self.ui.temp1, self.ui.temp2, self.ui.temp3, self.ui.temp_2]:
+            for label in [
+                    self.ui.temp1,
+                    self.ui.temp2,
+                    self.ui.temp3,
+                    self.ui.temp_2]:
                 text = label.text()
                 celsius = float(text.replace("°F", "").strip())
                 fahrenheit = (celsius - 32) / 9 * 5
                 label.setText(f"{fahrenheit:.1f}°C")
-        pass
 
     def update_theme(self, dark_mode: bool):
         if dark_mode:
@@ -97,7 +102,7 @@ class MainScreen(QMainWindow):
                 """
                                             background-color: #000;
                                             color: #fff;
-                                            border-radius: 70px; 
+                                            border-radius: 70px;
                                             font: 24pt \"MS Shell Dlg 2\";
                                             qproperty-alignment: 'AlignCenter';
                                         """
@@ -135,7 +140,7 @@ class MainScreen(QMainWindow):
                     """
                                                 background-color: #fff;
                                                 color: #000;
-                                                border-radius: 30px; 
+                                                border-radius: 30px;
                                                 font: 12pt \"MS Shell Dlg 2\";
                                                 qproperty-alignment: 'AlignCenter';
                                            """

@@ -1,3 +1,11 @@
+from PySide6.QtWidgets import QApplication
+from settings import APP_DIR, CRASH_FILE
+from utils.common import kill_process_by_name, disable_screen_saver
+from utils.logger import logger
+import signal
+import glob
+from PySide6 import QtGui
+import traceback
 import sys
 from PySide6.QtWidgets import QApplication
 from screens.main_screen import MainScreen
@@ -6,27 +14,17 @@ import os
 
 os.environ["QT_API"] = "pyside6"
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
-import traceback
-from PySide6 import QtGui
-import glob
-import signal
-from utils.logger import logger
-from utils.common import is_rpi, get_config, kill_process_by_name, disable_screen_saver
-import threading
-import time
-from settings import INIT_SCREEN, APP_DIR, CRASH_FILE
-import sys
-from PySide6.QtWidgets import QApplication, QMainWindow
-from PySide6.QtCore import Qt, QTimer
-from functools import partial
-from widgets.touchobserver import TouchObserver
 
 
 def main():
     sys._excepthook = sys.excepthook
 
     def exception_hook(exctype, value, exc_tb):
-        msg = f"Exctype: {exctype}, Value: {value}\nTraceback:\n {','.join(traceback.format_tb(exc_tb, limit=20))}"
+        msg = f"Exctype: {exctype}, Value: {value}\nTraceback:\n {
+            ','.join(
+                traceback.format_tb(
+                    exc_tb,
+                    limit=20))}"
         logger.error(f"!!!! Crashed! {msg}")
         with open(CRASH_FILE, "w") as f:
             f.write(msg.replace("\\n", "\n"))

@@ -1,6 +1,4 @@
 from PySide6.QtCore import QObject, Signal
-import json
-import os
 
 
 class Settings(QObject):

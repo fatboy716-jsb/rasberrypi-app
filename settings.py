@@ -33,6 +33,6 @@ TB_SERVER_URL = "http://tracker.mobilelinq.com:8080"
 INIT_SCREEN = "overview"  # Initial screen to show
 
 try:
-    from local_settings import *
+    pass
 except ImportError:
     pass
