@@ -7,12 +7,16 @@ import threading
 from settings import CONFIG_FILE
 from utils.logger import logger
 
-is_rpi = platform.system() == "Linux" and os.path.exists("/proc/device-tree/model")
+if platform.system() == "Linux" and os.path.exists("/proc/device-tree/model"):
+    is_rpi = 1  # Raspberry Pi detected
+else:
+    is_rpi = 0
 
 
 def disable_screen_saver():
     if is_rpi:
-        os.system('sudo sh -c "TERM=linux setterm -blank 0 >/dev/tty0"')
+        os.system('sudo sh -c '
+                  '"TERM=linux setterm -blank 0 >/dev/tty0"')
 
 
 def get_serial():
